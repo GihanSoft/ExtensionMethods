@@ -23,3 +23,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: pack
+      run: dotnet pack --configuration Release
+    - name: publish
+      run: dotnet nuget push "bin/Release/GihanSoft.ExtensionMethods..nupkg" --source "github" --skip-duplicate --no-symbols true
