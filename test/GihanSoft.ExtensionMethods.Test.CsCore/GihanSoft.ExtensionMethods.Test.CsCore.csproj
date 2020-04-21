@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GihanSoft.ExtensionMethods\GihanSoft.ExtensionMethods.csproj" />
+    <ProjectReference Include="..\..\src\GihanSoft.ExtensionMethods\GihanSoft.ExtensionMethods.csproj" />
   </ItemGroup>
 
 </Project>
