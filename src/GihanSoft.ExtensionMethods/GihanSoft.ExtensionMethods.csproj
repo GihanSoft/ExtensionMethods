@@ -15,15 +15,11 @@
     <Version>0.1.0.0</Version>
     <Description>C# Extension Methods</Description>
     <PackageIcon>GihanSoft.png</PackageIcon>
-    <ApplicationIcon>C:\Users\chief\source\repos\GihanSoft.ExtensionMethods\GihanSoft.ico</ApplicationIcon>
+    <ApplicationIcon>GihanSoft.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\..\GihanSoft.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <None Include="..\..\GihanSoft.ico">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
