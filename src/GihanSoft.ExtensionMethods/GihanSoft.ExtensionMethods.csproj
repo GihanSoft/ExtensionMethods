@@ -15,7 +15,7 @@
     <Version>0.1.0.0</Version>
     <Description>C# Extension Methods</Description>
     <PackageIcon>GihanSoft.png</PackageIcon>
-    <ApplicationIcon>..\..\GihanSoft.ico</ApplicationIcon>
+    <ApplicationIcon>C:\Users\chief\source\repos\GihanSoft.ExtensionMethods\GihanSoft.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
