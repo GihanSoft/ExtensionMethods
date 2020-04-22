@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  publish:
+  build:
     
     runs-on: ubuntu-latest
 
@@ -17,11 +17,16 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
+        source-url: https://nuget.pkg.github.com/GihanSoft/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Install dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Create the package
       run: dotnet pack -c Release src/GihanSoft.ExtensionMethods --no-restore
+    - name: Publish the package to GPR
+      run: dotnet nuget push src/GihanSoft.ExtensionMethods/bin/Release/*.nupkg --skip-duplicate
     - name: Publish the package to nuget.org
       run: dotnet nuget push src/GihanSoft.ExtensionMethods/bin/Release/*.nupkg -k oy2bimpr7ampbsxkwlaqtsilklomemledosh5y3c545ok4 -s https://api.nuget.org/v3/index.json --skip-duplicate
