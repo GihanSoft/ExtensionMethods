@@ -12,7 +12,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>C#, .NET, ExtensionMethod, ExtensionMethods, HelperMethod, HelperMethods, Extension, Extensions, Method, Methods</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.1.0.0</Version>
+    <Version>0.1.1.0</Version>
     <Description>C# Extension Methods</Description>
     <PackageIcon>GihanSoft.png</PackageIcon>
     <ApplicationIcon>GihanSoft.ico</ApplicationIcon>
