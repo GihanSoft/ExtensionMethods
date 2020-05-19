@@ -4,9 +4,9 @@ namespace GihanSoft
 {
     public static partial class Extensions
     {
-        public static byte[] DecodeBase64(this string str)
+        public static byte[] DecodeBase64(this string @this)
         {
-            return Convert.FromBase64String(str);
+            return Convert.FromBase64String(@this);
         }
     }
 }

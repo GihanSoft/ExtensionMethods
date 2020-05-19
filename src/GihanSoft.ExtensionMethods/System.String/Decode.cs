@@ -5,29 +5,29 @@ namespace GihanSoft
 {
     public static partial class Extensions
     {
-        public static byte[] Decode<TEncoding>(this string src)
+        public static byte[] Decode<TEncoding>(this string @this)
             where TEncoding : Encoding
         {
-            if (src.IsNull()) return null;
+            if (@this.IsNull()) return null;
             var encoding = Activator.CreateInstance<TEncoding>();
-            return encoding.GetBytes(src);
+            return encoding.GetBytes(@this);
         }
 
-        public static byte[] Decode(this string src, Encoding encoding)
+        public static byte[] Decode(this string @this, Encoding encoding)
         {
-            if (src.IsNull()) return null;
-            return encoding.GetBytes(src);
+            if (@this.IsNull()) return null;
+            return encoding.GetBytes(@this);
         }
 
         /// <summary>
         /// Default Encoding is UTF8
         /// </summary>
-        /// <param name="src"></param>
+        /// <param name="this"></param>
         /// <returns></returns>
-        public static byte[] Decode(this string src)
+        public static byte[] Decode(this string @this)
         {
-            if (src.IsNull()) return null;
-            return Encoding.UTF8.GetBytes(src);
+            if (@this.IsNull()) return null;
+            return Encoding.UTF8.GetBytes(@this);
         }
     }
 }

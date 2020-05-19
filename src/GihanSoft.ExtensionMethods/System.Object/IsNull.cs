@@ -1,26 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GihanSoft
+﻿namespace GihanSoft
 {
     public static partial class Extensions
     {
-        public static bool IsNull<TObject>(this TObject obj)
+        public static bool IsNull<TObject>(this TObject @this)
             where TObject : class
         {
-            return obj == null;
+            return @this == null;
         }
 
-        public static bool IsNull<TObject>(this TObject? obj)
+        public static bool IsNull<TObject>(this TObject? @this)
             where TObject : struct
         {
-            return obj == null;
+            return @this == null;
         }
 
-        public static bool IsNull(this object obj)
+        public static bool IsNull(this object @this)
         {
-            return obj == null;
+            return @this == null;
         }
     }
 }
