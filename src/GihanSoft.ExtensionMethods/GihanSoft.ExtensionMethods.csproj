@@ -12,13 +12,17 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>C#, .NET, ExtensionMethod, ExtensionMethods, HelperMethod, HelperMethods, Extension, Extensions, Method, Methods</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.1.3.0</Version>
+    <Version>0.1.3.1</Version>
     <Description>C# Extension Methods</Description>
     <PackageIcon>GihanSoft.png</PackageIcon>
     <ApplicationIcon>GihanSoft.ico</ApplicationIcon>
     <PackageReleaseNotes>0.1.3:
 * adds for object: As, Cast, IsNotNull
-* adds for string: Compare, IsNullOrEmpty, IsNotNullOrEmpty, IsNullOrWhiteSpace, IsNotNullOrWhiteSpace, ToDirectoryInfo, ToFileInfo</PackageReleaseNotes>
+* adds for string: Compare, IsNullOrEmpty, IsNotNullOrEmpty, IsNullOrWhiteSpace, IsNotNullOrWhiteSpace, ToDirectoryInfo, ToFileInfo
+
+0.1.3.1:
+* rename Cast to CastTo (it was hiding Linq Cast)
+    </PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
