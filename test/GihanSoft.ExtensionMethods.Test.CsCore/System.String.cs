@@ -5,8 +5,8 @@ using System.Text;
 using Xunit;
 
 namespace GihanSoft.ExtensionMethods.Test.CsCore {
-    public class System {
-
+    public class System 
+    {
         [Fact]
         public void DecodeDefault () {
             var str = "یک رشته‌ی تصادفی";
